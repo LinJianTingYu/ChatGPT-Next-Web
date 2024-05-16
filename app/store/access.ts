@@ -11,7 +11,7 @@ import { ensure } from "../utils/clone";
 import { DEFAULT_CONFIG } from "./config";
 
 let fetchState = 0; // 0 not fetch, 1 fetching, 2 done
-
+console.log("getClientConfig()", getClientConfig());
 const DEFAULT_OPENAI_URL =
   getClientConfig()?.buildMode === "export"
     ? DEFAULT_API_HOST + "/api/proxy/openai"

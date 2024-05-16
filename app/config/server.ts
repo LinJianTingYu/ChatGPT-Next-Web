@@ -68,6 +68,7 @@ function getApiKey(keys?: string) {
 }
 
 export const getServerSideConfig = () => {
+  console.log("getServerSideConfig", process.env.OPENAI_API_KEY);
   if (typeof process === "undefined") {
     throw Error(
       "[Server Config] you are importing a nodejs-only module outside of nodejs",
